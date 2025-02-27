@@ -1,15 +1,13 @@
-import { backButton, miniApp, useSignal } from '@telegram-apps/sdk-react';
+import { miniApp, useSignal } from '@telegram-apps/sdk-react';
 import { AppRoot, Button, Caption, IconButton, Link, Modal, Subheadline, Title } from '@telegram-apps/telegram-ui';
 import Book from '@/shared/assets/book.jpeg'
 import { themeParams } from '@telegram-apps/sdk-react';
-import { BackButton } from '@/shared/ui/BackButton';
 
 console.log(themeParams);
 
 
 export function App() {
   const isDark = useSignal(miniApp.isDark);
-  backButton.mount();
 
   return (
     <AppRoot
@@ -73,13 +71,13 @@ export function App() {
             <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
               <Caption
                 level="1"
-                weight="1"
+                weight="2"
               >
                 120,000 so'm
               </Caption>
               <Subheadline
                 level="1"
-                weight="2"
+                weight="3"
               >
                 Blood and Venom
               </Subheadline>
@@ -91,13 +89,13 @@ export function App() {
             <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
               <Caption
                 level="1"
-                weight="1"
+                weight="2"
               >
                 120,000 so'm
               </Caption>
               <Subheadline
                 level="1"
-                weight="2"
+                weight="3"
               >
                 Blood and Venom
               </Subheadline>
@@ -109,13 +107,13 @@ export function App() {
             <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
               <Caption
                 level="1"
-                weight="1"
+                weight="2"
               >
                 120,000 so'm
               </Caption>
               <Subheadline
                 level="1"
-                weight="2"
+                weight="3"
               >
                 Blood and Venom
               </Subheadline>
@@ -127,13 +125,13 @@ export function App() {
             <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
               <Caption
                 level="1"
-                weight="1"
+                weight="2"
               >
                 120,000 so'm
               </Caption>
               <Subheadline
                 level="1"
-                weight="2"
+                weight="3"
               >
                 Blood and Venom
               </Subheadline>
@@ -142,7 +140,6 @@ export function App() {
           </div>
         </div>
       </div>
-      <BackButton/>
     </AppRoot>
   );
 }
