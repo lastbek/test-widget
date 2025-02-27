@@ -1,5 +1,5 @@
 import { backButton, miniApp, useSignal } from '@telegram-apps/sdk-react';
-import { AppRoot, Button, Caption, IconButton, Link, Modal, Title } from '@telegram-apps/telegram-ui';
+import { AppRoot, Button, Caption, IconButton, Link, Modal, Subheadline, Title } from '@telegram-apps/telegram-ui';
 import Book from '@/shared/assets/book.jpeg'
 import { themeParams } from '@telegram-apps/sdk-react';
 import { BackButton } from '@/shared/ui/BackButton';
@@ -49,8 +49,8 @@ export function App() {
               }
             >
               <div style={{padding: '0 0.5rem 1rem 0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.625rem'}}>
-                <Button style={{width: '100%'}} size='m' mode='filled'>Bog'lanish</Button>
-                <Button style={{width: '100%'}} size='m' mode='outline'>Kanalga qo'shilish</Button>
+                <Button stretched={true} size='m' mode='filled'>Bog'lanish</Button>
+                <Button stretched={true} size='m' mode='outline'>Kanalga qo'shilish</Button>
                 <Caption
                   level="1"
                   weight="3"
@@ -68,7 +68,78 @@ export function App() {
           </Caption>
         </div>
         <div style={{padding: '1rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
-          <div style={{border: '1px solid #ddd', borderRadius: '0.5rem', padding: '0.75rem'}}></div>
+          <div style={{border: '1px solid #ddd', borderRadius: '0.75rem', overflow: 'hidden'}}>
+            <img src={Book} alt="" style={{width: '100%', height: '182px'}} />
+            <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
+              <Caption
+                level="1"
+                weight="1"
+              >
+                120,000 so'm
+              </Caption>
+              <Subheadline
+                level="1"
+                weight="2"
+              >
+                Blood and Venom
+              </Subheadline>
+              <Button size='s' mode='outline' style={{marginTop: '1rem'}}>Ulashish</Button>
+            </div>
+          </div>
+          <div style={{border: '1px solid #ddd', borderRadius: '0.75rem', overflow: 'hidden'}}>
+            <img src={Book} alt="" style={{width: '100%', height: '182px'}} />
+            <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
+              <Caption
+                level="1"
+                weight="1"
+              >
+                120,000 so'm
+              </Caption>
+              <Subheadline
+                level="1"
+                weight="2"
+              >
+                Blood and Venom
+              </Subheadline>
+              <Button size='s' mode='outline' style={{marginTop: '1rem'}}>Ulashish</Button>
+            </div>
+          </div>
+          <div style={{border: '1px solid #ddd', borderRadius: '0.75rem', overflow: 'hidden'}}>
+            <img src={Book} alt="" style={{width: '100%', height: '182px'}} />
+            <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
+              <Caption
+                level="1"
+                weight="1"
+              >
+                120,000 so'm
+              </Caption>
+              <Subheadline
+                level="1"
+                weight="2"
+              >
+                Blood and Venom
+              </Subheadline>
+              <Button size='s' mode='outline' style={{marginTop: '1rem'}}>Ulashish</Button>
+            </div>
+          </div>
+          <div style={{border: '1px solid #ddd', borderRadius: '0.75rem', overflow: 'hidden'}}>
+            <img src={Book} alt="" style={{width: '100%', height: '182px'}} />
+            <div style={{padding: '0.75rem', display: 'flex', flexDirection: 'column'}}>
+              <Caption
+                level="1"
+                weight="1"
+              >
+                120,000 so'm
+              </Caption>
+              <Subheadline
+                level="1"
+                weight="2"
+              >
+                Blood and Venom
+              </Subheadline>
+              <Button size='s' mode='outline' style={{marginTop: '1rem'}}>Ulashish</Button>
+            </div>
+          </div>
         </div>
       </div>
       <BackButton/>
